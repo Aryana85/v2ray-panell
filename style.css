@@ -1,0 +1,34 @@
+body {
+  background:#0f172a;
+  color:#fff;
+  font-family:sans-serif;
+  direction:rtl;
+}
+
+.panel {
+  max-width:500px;
+  margin:30px auto;
+  background:#020617;
+  padding:20px;
+  border-radius:12px;
+}
+
+.stats {
+  display:flex;
+  justify-content:space-between;
+}
+
+.stats div, .server {
+  background:#111827;
+  padding:10px;
+  border-radius:8px;
+  margin:5px 0;
+}
+
+button {
+  margin-right:5px;
+  background:#22c55e;
+  border:none;
+  padding:5px 10px;
+  border-radius:5px;
+}
