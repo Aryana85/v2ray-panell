@@ -1,0 +1,27 @@
+{
+  "volume": "100000 GB",
+  "days": 30,
+  "status": "active",
+  "servers": [
+    {"name":"Germany","ping":"80ms","config":"vless://GER","sub":"https://sub/ger"},
+    {"name":"Turkey","ping":"65ms","config":"vless://TR","sub":"https://sub/tr"},
+    {"name":"France","ping":"90ms","config":"vless://FR","sub":"https://sub/fr"},
+    {"name":"USA","ping":"70ms","config":"vless://US","sub":"https://sub/us"},
+    {"name":"UK","ping":"85ms","config":"vless://UK","sub":"https://sub/uk"},
+    {"name":"Canada","ping":"95ms","config":"vless://CA","sub":"https://sub/ca"},
+    {"name":"Netherlands","ping":"75ms","config":"vless://NL","sub":"https://sub/nl"},
+    {"name":"Italy","ping":"88ms","config":"vless://IT","sub":"https://sub/it"},
+    {"name":"Spain","ping":"92ms","config":"vless://ES","sub":"https://sub/es"},
+    {"name":"Sweden","ping":"100ms","config":"vless://SE","sub":"https://sub/se"},
+    {"name":"Norway","ping":"105ms","config":"vless://NO","sub":"https://sub/no"},
+    {"name":"Finland","ping":"110ms","config":"vless://FI","sub":"https://sub/fi"},
+    {"name":"Poland","ping":"98ms","config":"vless://PL","sub":"https://sub/pl"},
+    {"name":"Austria","ping":"82ms","config":"vless://AT","sub":"https://sub/at"},
+    {"name":"Switzerland","ping":"78ms","config":"vless://CH","sub":"https://sub/ch"},
+    {"name":"Japan","ping":"120ms","config":"vless://JP","sub":"https://sub/jp"},
+    {"name":"Singapore","ping":"130ms","config":"vless://SG","sub":"https://sub/sg"},
+    {"name":"UAE","ping":"90ms","config":"vless://AE","sub":"https://sub/ae"},
+    {"name":"Russia","ping":"100ms","config":"vless://RU","sub":"https://sub/ru"},
+    {"name":"India","ping":"140ms","config":"vless://IN","sub":"https://sub/in"}
+  ]
+}
