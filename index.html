@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>پنل اشتراک</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="panel">
+  <h1>پنل اشتراک</h1>
+
+  <div class="stats">
+    <div>📦 حجم<br><b id="volume"></b></div>
+    <div>⏳ روز<br><b id="days"></b></div>
+    <div>✅ وضعیت<br><b id="status"></b></div>
+  </div>
+
+  <h2>سرورها</h2>
+  <div id="servers"></div>
+</div>
+
+<script>
+fetch('data.json')
+.then(r => r.json())
+.then(data => {
+  volume.textContent = data.volume
+  days.textContent = data.days
+  status.textContent = data.status
+
+  data.servers.forEach(s => {
+    servers.innerHTML += `
+      <div class="server">
+        ${s.name} (${s.ping})
+        <button onclick="copy('${s.config}')">کانفیگ</button>
+        <button onclick="copy('${s.sub}')">ساب</button>
+      </div>`
+  })
+})
+
+function copy(t){
+  navigator.clipboard.writeText(t)
+  alert("کپی شد")
+}
+</script>
+
+</body>
+</html>
